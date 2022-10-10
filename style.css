@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+    height: 2000px;
+}
+.wtf {
+    max-width: 1110px;
+    margin: 0px auto 91px;
+}
+.mask {
+    display: none;
+}
+.imgDiv {
+    position: relative;
+    z-index: -1;
+}
+.tirangle {
+    display: none;
+}
+.ovalLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 0%;
+    z-index: 10;
+}
+.groupOval {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blueOval {
+    position: absolute;
+    right: 0%;
+    z-index: -2;
+}
+.content {
+    position: relative;
+    padding-top: 220px;
+    /* padding-left: 165px; */
+}
+.content h1 {
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: #191826;
+    width: 1015px;
+}
+.content p {
+    margin-top: 40px;
+    width: 825px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+}
+.svgBall {
+    position: absolute;
+    right: 8%;
+    top: 66%;
+}
+.mainContainer {
+    position: relative;
+    margin-top: 300px;
+    text-align: center;
+}
+.mobileImg {
+    position: absolute;
+    top: -26%;
+    left: 25%;
+    width: 280px;
+}
+.card {
+    position: absolute;
+    top: 21%;
+    left: 51%;
+    padding: 58px 59px 48px 54px ;
+    background: #FA7453;
+    width: 446px;
+    border-radius: 12px;
+    text-align: left;
+}
+.card h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FCFAF9;
+}
+.aboutCard {
+    margin: 22px 0 39px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #FCFAF9;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cost {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #FCFAF9;
+    align-items: top;
+}
+.month {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FCFAF9;
+}
+.iosButton {
+    margin-top: 46px;
+    text-align: center;
+    width: 333px;
+    padding: 15px 0;
+    background: #191826;
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+}
+.iosButton:hover {
+    background: #66E2DC;
+}
+.androidButton {
+    margin-top: 16px;
+    text-align: center;
+    width: 333px;
+    padding: 15px 0;
+    background: #FCFAF9;
+    color: #191826;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+}
+.androidButton:hover {
+    background: #FFB964;
+}
+.svgImg {
+    position: absolute;
+    top: 10%;
+    right: 9%;
+    z-index: -1;
+}
+.footerContainer {
+    margin: 200px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+}
+.footerDesc {
+    display: flex;
+}
+.footerDesc img {
+    height: 32px;
+}
+.footerDesc p {
+    width: 366px;
+    margin-left: 137px;
+}
+.svgIcone {
+    margin-right: 20px;
+    fill: #191826;
+    transition: 0.3s;
+}
+.svgIcone:hover {
+    fill: #FA7453;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .logo {
+        left: 9%;
+    }
+    .content {
+        padding-left: 100px;
+    }
+    .content h1 {
+        font-size: 64px;
+        width: 520px;
+    }
+    .content p {
+        font-size: 18px;
+        width: 514px;
+    }
+    .mobileImg {
+        width: 270px;
+        top: -47%;
+        left: 10%;
+    }
+    .backgroundImg {
+        width: 700px;
+    }
+    .card {
+        width: 399px;
+        left: 32%;
+        top: 26%;
+    }
+    .iosButton {
+        width: 296px;
+    }
+    .androidButton {
+        width: 296px;
+    }
+    .footerContainer {
+        width: 696px;
+        margin-top: 400px;
+    }
+    .footerDesc {
+        display: block;
+    }
+    .footerDesc p {
+        margin: 30px 0 0 0;
+    }
+}
+@media (max-width: 768px) {
+    .wtf {
+        max-width: 1110px;
+        margin: 0px auto 91px;
+    }
+    .logo {
+        left: 14%;
+    }
+    .ovalLeft {
+        display: none;
+    }
+    .groupOval {
+        display: none;
+    }
+    .blueOval {
+        display: none;
+    }
+    .tirangle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .content {
+        padding-left: 39px;
+    }
+    .content h1 {
+        font-size: 40px;
+        width: 327px;
+        line-height: 1;
+    }
+    .content p {
+        font-size: 16px;
+        width: 327px;
+    }
+    .mobileImg {
+        width: 208px;
+        top: -10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .backgroundImg {
+        display: none;
+    }
+    .mask {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .card {
+        max-width: 375px;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .card h3 {
+        font-size: 32px;
+        line-height: 0;
+    }
+    .aboutCard {
+        width: 302px;
+        font-size: 18px;
+    }
+    .iosButton {
+        width: 275px;
+    }
+    .androidButton {
+        width: 275px;
+    }
+    .footerContainer {
+        margin: 400px 0 0;
+        padding-left: 39px;
+        display: block;
+        width: 327px;
+    }
+    .footerDesc {
+        display: block;
+    }
+    .footerDesc p {
+        margin: 30px 0;
+        width: 300px;
+    }
+    
+}
