@@ -5,9 +5,6 @@
     box-sizing: border-box;
     font-family: 'IBM Plex Sans', sans-serif;
 }
-body {
-    height: 2000px;
-}
 .wtf {
     max-width: 1110px;
     margin: 0px auto 91px;
